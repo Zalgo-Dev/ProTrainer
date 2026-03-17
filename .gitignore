@@ -1,0 +1,29 @@
+# Logs and caches
+*.log
+neo-*.log
+cleo.log
+
+# CLEO runtime stuff
+.cleo/
+*.txt
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+.Trash-*
+
+# Editor files (e.g. VSCode)
+.vscode/
+.idea/
+
+# Zip files
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
+# IDE/build artifacts
+node_modules/
+dist/
+build/
