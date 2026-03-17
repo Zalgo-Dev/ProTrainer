@@ -24,7 +24,7 @@ Our modular architecture ensures performance and vast capabilities:
 3.  **Install**:
     *   Drop `ProTrainer.js` into your `Gameface/Binaries/Win64/CLEO/` folder.
     *   Drop the entire `ProTrainer` folder (containing `core` and `modules`) into the same `CLEO` folder.
-4.  **Play**: Launch the game, wait for the CLEO initialized notification, and press `[DEFAULT_KEY]` to open the menu!
+4.  **Play**: Launch the game, wait for the CLEO initialized notification, and press `f4` to open the menu!
 
 ## 📂 Project Structure
 
