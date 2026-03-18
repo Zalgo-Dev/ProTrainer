@@ -5,16 +5,17 @@ export class TeleportMenu {
         // Liste des lieux prédéfinis
         this.locations = [
             { name: "Grove Street", x: 2495.2, y: -1670.6, z: 13.3 },
-            { name: "Aéroport Los Santos", x: 1677.3, y: -2256.0, z: 13.5 },
-            { name: "Mont Chiliad", x: -2329.4, y: -1619.6, z: 483.5 },
-            { name: "San Fierro (Gare)", x: -2009.6, y: 142.3, z: 27.5 },
-            { name: "Las Venturas (Four Dragons)", x: 2017.3, y: 1007.8, z: 10.8 }
+            { name: "LS International Airport", x: 1677.3, y: -2256.0, z: 13.5 },
+            { name: "Mount Chiliad Peak", x: -2329.4, y: -1619.6, z: 483.5 },
+            { name: "SF Station", x: -2009.6, y: 142.3, z: 27.5 },
+            { name: "The Four Dragons Casino", x: 2017.3, y: 1007.8, z: 10.8 },
+            { name: "Area 69 (Secret)", x: 213.5, y: 1912.4, z: 17.6 }
         ];
 
         this.menuDef = {
-            name: "Téléportation",
+            name: "Teleportation",
             subMenu: {
-                title: "TELEPORTATION",
+                title: "TELEPORT LOCATIONS",
                 items: this.buildItems()
             }
         };
@@ -23,7 +24,7 @@ export class TeleportMenu {
     buildItems() {
         let items = [];
         items.push({
-            name: "Vers le Waypoint",
+            name: "TP to Waypoint",
             action: () => this.teleportToWaypoint()
         });
 

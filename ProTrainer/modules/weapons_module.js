@@ -151,10 +151,10 @@ export class WeaponsMenu {
     toggleFastReload() {
         this.state.fastReload = !this.state.fastReload;
         if (this.state.fastReload) {
-            p = new Player(0);
+            let p = new Player(0);
             p.setFastReload(true);
         } else {
-            p = new Player(0);
+            let p = new Player(0);
             p.setFastReload(false);
         }
     }

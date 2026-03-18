@@ -7,17 +7,16 @@ export class VehicleModsMenu {
             subMenu: {
                 title: "Vehicule Mods",
                 items: [
-                    { name: "Réparer le véhicule", action: () => this.repairCar() },
-                    { name: "Rafistoler la carrosserie", action: () => this.cleanCar() },
-                    { name: "Remettre sur ses quatre roues", action: () => this.flipCar() },
-                    { name: "Sticky wheels", action: () => this.stickyWheels() },
-                    { name: "Ajouter de la Nitro", action: () => this.giveNitro() },
-                    { name: "Installer les suspensions hydrauliques", action: () => this.giveHydraulics() },
-                    { name: "Couleur aléatoire", action: () => this.randomColor() },
-                    { name: "Verrouiller les portes", action: () => this.lockDoors() },
-                    { name: "Déverrouiller les portes", action: () => this.unlockDoors() },
-                    { name: "Rendre le véhicule invincible", action: () => this.setGodMode(true) },
-                    { name: "Désactiver l'invincibilité", action: () => this.setGodMode(false) }
+                    { name: "Instant Fix", action: () => this.repairCar() },
+                    { name: "Wash & Polish", action: () => this.cleanCar() },
+                    { name: "Auto Flip", action: () => this.flipCar() },
+                    { name: "NOS Injector", action: () => this.giveNitro() },
+                    { name: "Hydraulics Kit", action: () => this.giveHydraulics() },
+                    { name: "Random Paint", action: () => this.randomColor() },
+                    { name: "Lock Doors", action: () => this.lockDoors() },
+                    { name: "Unlock Doors", action: () => this.unlockDoors() },
+                    { name: "Vehicle GodMode", action: () => this.setGodMode(true) },
+                    { name: "Disable GodMode", action: () => this.setGodMode(false) }
                 ]
             }
         };
@@ -125,16 +124,6 @@ export class VehicleModsMenu {
                 car.setProofs(false, false, false, false, false);
                 log("Invincibilité du véhicule DÉSACTIVÉE.");
             }
-        } else {
-            log("Vous n'êtes pas dans un véhicule.");
-        }
-    }
-
-    stickyWheels() {
-        let car = this.getCurrentCar();
-        if (car) {
-            // TODO: Implementer les roues collantes (sticky wheels) en utilisant les fonctions natives de GTA SA DE
-            log("Fonction 'Sticky Wheels' non encore implémentée.");
         } else {
             log("Vous n'êtes pas dans un véhicule.");
         }

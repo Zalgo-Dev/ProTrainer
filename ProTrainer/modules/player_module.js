@@ -16,10 +16,10 @@ export class PlayerMenu {
         this.menuDef = {
             name: "CJ Options",
             subMenu: {
-                title: "OPTIONS JOUEUR",
+                title: "PLAYER OPTIONS",
                 items: [
                     {
-                        name: "Donner de l'argent",
+                        name: "Cash Drop",
                         rightText: () => `< ${this.state.moneyOptions[this.state.currentMoneyIndex]} $ >`,
                         onLeft: () => {
                             this.state.currentMoneyIndex--;
@@ -38,10 +38,10 @@ export class PlayerMenu {
                             this.giveMoney(amount); 
                         }
                     },
-                    { name: "Anti Police", action: () => this.setWantedLvl() },
-                    { name: "Soigner CJ", action: () => this.healPlayer() },
+                    { name: "No Wanted", action: () => this.setWantedLvl() },
+                    { name: "Full Medkit", action: () => this.healPlayer() },
                     {
-                        name: "GodMode",
+                        name: "Invincibility (God)",
                         rightText: () => (this.state.godMode ? "ON" : "OFF"),
                         rightColor: () => (this.state.godMode ? [0, 255, 0] : [255, 0, 0]), 
                         action: () => {
@@ -49,10 +49,10 @@ export class PlayerMenu {
                             this.setGodMode(this.state.godMode);
                         }
                     },
-                    { name: "Armure Max", action: () => this.giveMaxArmor() },
-                    { name: "Donner Kit d'Armes Complet", action: () => this.giveWeaponKit() },
-                    { name: "Max Stats (Muscles, Endurance...)", action: () => this.setMaxStats() },
-                    { name: "Suicide (Wasted)", action: () => this.suicide() }
+                    { name: "Set Armor 100%", action: () => this.giveMaxArmor() },
+                    { name: "Weapon Kit", action: () => this.giveWeaponKit() },
+                    { name: "Mastery Stats (Muscles, Endurance...)", action: () => this.setMaxStats() },
+                    { name: "Kill Self", action: () => this.suicide() }
                 ]
             }
         };
