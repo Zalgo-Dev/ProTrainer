@@ -6,6 +6,8 @@
 
 ProTrainer is a highly modular, lightweight, and powerful Mod Menu written in JavaScript specifically designed for **Grand Theft Auto: San Andreas - The Definitive Edition** running on the CLEO Redux framework.
 
+https://discord.gg/dvgVdkVGpQ
+
 ## ✨ Features
 
 Our modular architecture ensures performance and vast capabilities:
