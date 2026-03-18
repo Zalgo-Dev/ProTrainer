@@ -6,6 +6,7 @@ import { WeaponsMenu } from './ProTrainer/modules/weapons_module.js';
 import { TeleportMenu } from './ProTrainer/modules/teleport_module.js';
 import { VehicleMenu } from './ProTrainer/modules/vehicles_module.js';
 import { VehicleModsMenu } from './ProTrainer/modules/vehicle_mods_module.js';
+import { WeatherMenu } from './ProTrainer/modules/weather_module.js';
 
 
 const playerModule = new PlayerMenu();
@@ -13,6 +14,7 @@ const weaponsModule = new WeaponsMenu();
 const vehicleModule = new VehicleMenu();
 const teleportModule = new TeleportMenu();
 const vehicleModsModule = new VehicleModsMenu();
+const weatherModule = new WeatherMenu();
 
 // --- ARBRE PRINCIPAL DU MENU ---
 const mainMenuDef = {
@@ -22,7 +24,8 @@ const mainMenuDef = {
         vehicleModule.getMenu(),
         vehicleModsModule.getMenu(),
         teleportModule.getMenu(),
-        weaponsModule.getMenu()
+        weaponsModule.getMenu(),
+        weatherModule.getMenu()
     ]
 };
 
