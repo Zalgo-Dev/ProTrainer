@@ -1,4 +1,4 @@
-# 🌟 ProTrainer - GTA San Andreas Definitive Edition Mod Menu 🌟
+# ProTrainer - GTA San Andreas Definitive Edition Mod Menu
 
 ![GTA San Andreas](https://img.shields.io/badge/GTASA-Definitive%20Edition-success?style=for-the-badge)
 ![JavaScript](https://img.shields.io/badge/Language-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
@@ -8,7 +8,9 @@ ProTrainer is a highly modular, lightweight, and powerful Mod Menu written in Ja
 
 https://discord.gg/dvgVdkVGpQ
 
-## ✨ Features
+<img width="1919" height="1000" alt="image" src="https://github.com/user-attachments/assets/07b861f7-bac6-4c54-9ac5-8955f7f4586d" />
+
+## Features
 
 Our modular architecture ensures performance and vast capabilities:
 
@@ -19,7 +21,7 @@ Our modular architecture ensures performance and vast capabilities:
 *   🔫 **Weapons Module**: Give yourself any weapon, infinite ammo, no reload.
 *   💻 **Core UI**: Extremely clean, native-looking graphical user interface for seamless navigation.
 
-## 🚀 Installation
+## Installation
 
 1.  **Prerequisites**: Make sure you have [CLEO Redux](https://cleo.li/) installed for GTA SA: DE.
 2.  **Download**: Clone this repository or download the latest release from the [Releases page](../../releases).
@@ -28,23 +30,23 @@ Our modular architecture ensures performance and vast capabilities:
     *   Drop the entire `ProTrainer` folder (containing `core` and `modules`) into the same `CLEO` folder.
 4.  **Play**: Launch the game, wait for the CLEO initialized notification, and press `f4` to open the menu!
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 📁 ProTrainer-ModMenu/
 ├── 📄 ProTrainer.js        # Main initialization script
 └── 📁 ProTrainer/          # Dedicated mod directory
     ├── 📁 core/            # Core scripts (e.g., UI rendering)
-    │   └── ui.js
+    │   └── 📄 ui.js
     └── 📁 modules/         # Feature modules
-        ├── player_module.js
-        ├── teleport_module.js
-        ├── vehicle_mods_module.js
-        ├── vehicles_module.js
-        └── weapons_module.js
+        ├── 📄 player_module.js
+        ├── 📄 teleport_module.js
+        ├── 📄 vehicle_mods_module.js
+        ├── 📄 vehicles_module.js
+        └── 📄 weapons_module.js
 ```
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, feature requests, and bug reports are highly welcome! 
 1. Fork the project.
@@ -53,7 +55,7 @@ Contributions, feature requests, and bug reports are highly welcome!
 4. Push to the branch (`git push origin feature/AmazingFeature`).
 5. Open a Pull Request.
 
-## 📝 License
+## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
